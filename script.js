@@ -54,3 +54,39 @@ function neustarten() {
 }
 
 window.onload = ladeVokabeln;
+
+function login() {
+  const name = document.getElementById("username").value.trim();
+  if (name) {
+    localStorage.setItem("nutzername", name);
+    localStorage.setItem("punkte", "0");  // Startwert
+    showSpielbereich();
+  }
+}
+
+function logout() {
+  localStorage.clear();
+  location.reload();
+}
+
+function showSpielbereich() {
+  const name = localStorage.getItem("nutzername");
+  const punkte = localStorage.getItem("punkte") || 0;
+
+  if (name) {
+    document.getElementById("login-container").style.display = "none";
+    document.getElementById("spiel-container").style.display = "block";
+    document.getElementById("nutzername").textContent = name;
+    document.getElementById("punkte").textContent = punkte;
+  }
+}
+
+// Punkte aktualisieren (z. B. nach richtiger Antwort)
+function punkteErhöhen(wert) {
+  let punkte = parseInt(localStorage.getItem("punkte") || "0");
+  punkte += wert;
+  localStorage.setItem("punkte", punkte);
+  document.getElementById("punkte").textContent = punkte;
+}
+
+window.onload = showSpielbereich;
