@@ -1,7 +1,0 @@
-[
-    {"de": "Hallo", "it": "Ciao", "falsch": ["Grazie", "Per favore"]},
-    {"de": "Guten Morgen", "it": "Buongiorno", "falsch": ["Buonasera", "Arrivederci"]},
-    {"de": "Tschüss", "it": "Arrivederci", "falsch": ["Scusa", "Salve"]},
-    {"de": "Danke", "it": "Grazie", "falsch": ["Prego", "Per favore"]},
-    {"de": "Bitte", "it": "Per favore", "falsch": ["Prego", "Ciao"]}
-]
