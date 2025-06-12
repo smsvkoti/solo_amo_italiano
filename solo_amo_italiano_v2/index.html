@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Solo Amo Italiano</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+    <h1>Solo Amo Italiano 🇮🇹</h1>
+    <div id="info-bar">
+      <span>🔥 Streak: <span id="streak">0</span></span>
+      <span>⭐ Punkte: <span id="punkte">0</span></span>
+    </div>
+    <div id="level-container"></div>
+    <div id="quiz-container" style="display:none;">
+      <p id="frage"></p>
+      <div id="antworten"></div>
+      <audio id="audio-player" controls style="display:none;"></audio>
+    </div>
+  </div>
+  <script src="levels.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

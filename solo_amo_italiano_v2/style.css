@@ -1,0 +1,44 @@
+body {
+  font-family: sans-serif;
+  background: #f3f4f6;
+  color: #111827;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+#info-bar {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+#level-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+.level {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #d1d5db;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+.level.locked {
+  background: #9ca3af;
+  cursor: default;
+}
+.level.completed {
+  background: #10b981;
+  color: white;
+}
+#antworten button {
+  margin: 5px;
+  padding: 10px 20px;
+}
