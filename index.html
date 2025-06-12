@@ -7,6 +7,19 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div id="login-container">
+  <h2>Willkommen!</h2>
+  <input type="text" id="username" placeholder="Dein Name">
+  <button onclick="login()">Loslegen</button>
+</div>
+
+<div id="spiel-container" style="display:none;">
+  <p>Hallo <span id="nutzername"></span> 👋</p>
+  <p>Punkte: <span id="punkte"></span></p>
+  <button onclick="logout()">Abmelden</button>
+  <!-- Hier kommt dein Spiel -->
+</div>
+
     <div class="app">
         <h1>Italienisch Lernspiel – Begrüßung</h1>
         <div id="quiz-container">
